@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (result) {
         output.textContent = result;
       } else {
-        output.textContent = "❌ Enkripsi gagal pada tahap RSA.\n\nKemungkinan penyebab:\n1. Kunci RSA tidak valid (gunakan tombol '🔑 Generate Pasangan Kunci RSA Baru')\n2. Teks terlalu panjang untuk enkripsi RSA (maksimal ~214 karakter untuk kunci 2048-bit)\n\n💡 Tip: RSA hanya untuk enkripsi data kecil. Untuk teks panjang, sistem ini menggunakan kombinasi dengan enkripsi lainnya.";
+        output.textContent = "Enkripsi gagal pada tahap RSA.\n\nKemungkinan penyebab:\n1. Kunci RSA tidak valid (gunakan tombol ' Generate Pasangan Kunci RSA Baru')\n2. Teks terlalu panjang untuk enkripsi RSA (maksimal ~214 karakter untuk kunci 2048-bit)\n\n Tip: RSA hanya untuk enkripsi data kecil. Untuk teks panjang, sistem ini menggunakan kombinasi dengan enkripsi lainnya.";
       }
     } catch (error) {
       output.textContent = "Terjadi kesalahan saat enkripsi: " + error.message;
